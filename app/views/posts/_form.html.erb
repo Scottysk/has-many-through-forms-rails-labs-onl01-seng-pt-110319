@@ -16,6 +16,7 @@
 
 
 <%= f.fields_for :categories, post.categories.build do |category_builder| %>
+ <%= category_builder.label :name, "Category" %>
  <%= category_builder.text_field :name %>
 <% end %>
 
