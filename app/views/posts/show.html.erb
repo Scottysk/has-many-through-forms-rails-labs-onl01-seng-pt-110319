@@ -8,4 +8,8 @@ Categories: <%= @post.categories.each do |category| %>
 </li>
 <% end %>
 
-<% 
+<% @post.comments.each do |comment| %>
+<li>
+  <%= comment.user.username %> says <%= comment.content %>
+</li>
+<% end %>
