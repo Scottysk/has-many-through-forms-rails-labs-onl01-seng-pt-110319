@@ -11,7 +11,11 @@
 </p>
 
 <% Category.each do |c| %>
-
+<p>
+  <label for="category_id_1">Cool</label>
+  <input type="checkbox" name="post[category_ids]" value"1">
+</p>
+<% end %>
 
 <%= f.submit %>
 
