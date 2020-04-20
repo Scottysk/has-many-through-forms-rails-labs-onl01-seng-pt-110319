@@ -11,8 +11,11 @@
 </p>
 
 <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |b| %>
-<p> <%= b.label %> </p>
-<% end %>
+<p> 
+  <%= b.label %> 
+  <% b.check_box %> 
+</p>
+  <% end %>
 
 <% Category.all.each do |c| %>
 <p>
