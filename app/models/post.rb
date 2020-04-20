@@ -5,4 +5,6 @@ class Post < ActiveRecord::Base
   has_many :users, through: :comments
 
 
+  def categories_attributes=()
+
 end
