@@ -14,11 +14,6 @@
 
 <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
 
-<p> 
-  <%= b.label %> 
-  <% b.check_box %> 
-</p>
-  <% end %>
 
 <%= f.fields_for :categories, post.categories.build do |category_builder| %>
  <%= category_builder.text_field :name %>
